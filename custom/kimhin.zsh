@@ -16,7 +16,8 @@ export PATH="$MAGICK_HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bi
 export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib"
 export VIM_APP_DIR="/Applications/__MyApps/MacVim"
 export LC_TYPE=en_US.UTF-8
-
+export GREP_OPTIONS="--color=auto"
+export CLICOLOR=1;
 # Setup cdpath variable, so you can 'cd cdcm_ui' instead of 'cd ~/__Dev/cdcm_ui' 
 cdpath=(~ ~/__Dev)
 
