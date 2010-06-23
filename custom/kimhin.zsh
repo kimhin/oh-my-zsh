@@ -1,7 +1,15 @@
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Overwrite the ZSH_THEME in .zshrc
-export ZSH_THEME="risto"
+# export ZSH_THEME="risto"
+# -*- sh -*- vim:set ft=sh ai et sw=4 sts=4:
+# It might be bash like, but I can't have my co-workers knowing I use zsh
+PROMPT='
+%{$fg[green]%}%n@%m:%{$fg_bold[blue]%}%2~ $(git_prompt_info)
+%{$reset_color%}%(!.#.$) '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}‹"
+ZSH_THEME_GIT_PROMPT_SUFFIX="›%{$reset_color%}"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
